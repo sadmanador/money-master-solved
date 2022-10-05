@@ -29,4 +29,11 @@ function setValueToId(id, calculation){
     totalExpanseField.innerText = calculation;
 }
 
+function getValueFromTextField(id){
+    const textField = document.getElementById(id);
+    const textFieldString = textField.innerText
+    const textFieldInt = parseInt(textFieldString)
+    return textFieldInt
+}
+
 
